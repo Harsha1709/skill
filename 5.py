@@ -1,4 +1,12 @@
-Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
-[GCC 5.4.0 20160609] on linux
-Type "copyright", "credits" or "license()" for more information.
->>> 
+def word_count(str):
+        count=dict()
+        w=str.split()
+        print(w)
+        for a in w:
+                if a in count:
+                    count[a]+=1
+                else:
+                    count[a]=1
+        return count
+c=word_count('we we are are in sql lab lab')
+print(c)
